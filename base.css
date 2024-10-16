@@ -1,0 +1,51 @@
+@charset "utf-8";body h1 {
+	color: #1D6EA4;
+	font-family: Verdana, Geneva, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+}
+.key {
+	color: white;
+	background-color: blue;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: bold;
+	background-image: url(IMG_3149.JPG);
+}
+.teacher {
+	width: 100%;
+    height: auto;
+	min-height: 11px;
+	color: #B60F11;
+	border-bottom-width: 0px;
+	background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+}
+back img1 {
+	background-image: url(url);
+	background-color: #D52528;
+
+}
+body {
+	background-size: 100%
+%;
+	background-image: url(%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202024-10-15%20195908.png);
+	background-position: 0% 0%;
+}
+
+.teacher img {
+}
+
+.teacher img {
+}
+
+back img2 {
+}
+back img3 {
+}
+
+
+
+
+body p img {
+	border: 10px dashed #E727FF;
+}
