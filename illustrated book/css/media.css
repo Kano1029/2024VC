@@ -1,0 +1,11 @@
+.image-container {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* 画像を中央揃え */
+    gap: 20px; /* 画像間の隙間 */
+}
+
+img {
+    max-width: 100%; /* 画像が親コンテナに収まるように */
+    height: auto; /* 高さは自動で調整 */
+}
