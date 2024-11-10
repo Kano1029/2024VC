@@ -1,0 +1,349 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    text-align: center;
+}
+
+
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+    margin-bottom: 100px;
+    
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.image-container h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(245, 164, 65);
+    color: white;
+    padding: 6rem 3rem;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 5; 
+}
+
+
+.web-designer-banner-button {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #f7931e, #e40137);
+    border: 0;
+    border-radius: 36px;
+    box-shadow: 1px 4px 15px #fabe68;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    height: 67px;
+    letter-spacing: 2.88px;
+    width: 368px;
+    text-align: center;
+    text-decoration: none;
+    transition: .8s;
+    z-index: 10; 
+}
+
+
+.about-container {
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; /* 右寄せ */
+    background-color: rgb(225, 225, 225);
+    box-sizing: border-box; 
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0; 
+}
+
+.about-feature {
+    position: relative;
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+
+.header-title-feature {
+    font-size: 2em;
+    color: #000; /* Adjust the color as needed */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    color: #000000; /* Adjust the color as needed */
+}
+
+.about-left-txt {
+    
+    text-align: left;
+    display: block;
+}
+
+.about-left{
+    margin: 16px auto;
+	text-align: center;
+    display: block;
+}
+
+.padding-bottom-top{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px; 
+	text-align: center;
+	display: block;
+    text-align: left;
+}
+
+
+.padding-bottom-min {
+    letter-spacing: 0.2em; 
+    padding-bottom: 10px; 
+    text-align: center;
+	display: block;
+    text-align: left;
+    
+
+}
+
+.padding-bottom-bottom {
+	text-align: center;
+	display: block;
+    padding-top: 30px;
+    text-align: left;
+}
+
+
+
+.about-right {
+    flex: 1; 
+    max-width: 50%; 
+    text-align: right;
+}
+
+
+
+.about-header {
+    margin-bottom: 20px;
+}
+
+.section-headerTitle {
+    color: #fff;
+    font-size: 170px;
+    font-weight: 700;
+    font-family: futura;
+    line-height: 68px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.padding-bottom {
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    
+    
+}
+
+
+
+
+.tit_faq {
+    font-size: 17px;
+    margin-top: 40px; 
+    text-align: left;
+}
+
+.headerTitle-feature{
+    color:rgb(225, 225, 225);
+    font-size: 170px;
+    font-weight: 550;
+    font-family: futura;
+    line-height: 68px;
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+.feature-header{
+    text-align: right;
+}
+
+.feature-main-light {
+    display: flex;              
+    justify-content: space-between; 
+    align-items: center;        
+    background-color: rgb(225, 225, 225);         
+                   
+}
+
+.feature-main-left { /* 右寄せ */
+    line-height: 2; /* 行間を倍に設定 */
+    display: flex;            
+    flex-direction: column;     
+    gap: 20px;               
+    flex-shrink: 0; 
+    padding: 20px;          
+}
+
+.feature-main-light-txt { /* 右寄せ */
+    max-width: 500px;         
+    text-align: left;                 
+          
+}
+
+.light-h2 {
+    line-height: 2; /* 行間を倍に設定 */
+    font-size: 33px;            
+    font-weight: bold;
+    margin-bottom: 10px;       
+}
+
+.light-p {
+    font-size: 16px;        
+    line-height: 2.0;
+}
+
+
+  .light-pic{
+    text-align: right;
+    }
+    
+    .p02{
+        width:350px;
+    }
+    
+    .h202{
+        font-size: 33px;
+    }
+    .feature-main-light-txt02{
+        text-align: left;
+        padding:200px;
+        order: 1; /* この要素を前に配置 */
+    }
+    
+    
+    
+    
+    
+    .feature-main-left02{
+        display: flex;
+      align-items: center;
+      margin-left: 10px;
+      order: 2; /* この要素を後ろに配置 */
+    }
+    
+    
+    
+    .feature-main-light02 {
+        display: flex;
+        text-align: left;
+        align-items: center; /* 垂直方向の中央揃え（必要に応じて） */
+        width:1000px;
+        height:600px;
+        background-color:rgb(225, 225, 225);   
+        margin-bottom: 90px;
+    }
+
+
+
+    .about-feature03 {
+        display: flex;
+        justify-content: flex-end; /* Align content to the right */
+        background-color: rgb(225, 225, 225); /* Background color for this section */
+        margin-bottom: 90px;
+    }
+    
+    .feature-main-light03 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* 左寄せ */
+        width: 1000px;
+        height: 600px;
+        background-color: rgb(225, 225, 225);   
+        margin-bottom: 90px;
+    }
+    .feature-main-left03 {
+        display: flex;
+        align-items: center;
+        /* margin-left: auto; 削除 */
+    }
+    
+    .feature-main-light-txt03 {
+        text-align: left;
+        padding: 200px;
+    }
+    
+    v.left-pic03 {
+        text-align: left;
+    }
+    
+    .p03 {
+        width: 350px;
+    }
+    
+    .h203 {
+        font-size: 33px;
+    }
+    
+    .l-information.know-more, 
+    .l-information.know-more .information-image {
+        height: 439.02px;
+    }
+
+    .l-information{
+        overflow:hidden;
+        position: relative;
+        width: 100%;
+    }
+    .section{
+        display: block;
+        unicode-bidi: isolate;
+    }
+
+
+@media (max-width: 768px) {
+    .image-container h4 {
+        padding: 4rem 2rem;
+    }
+
+    .web-designer-banner-button {
+        width: 280px; 
+        font-size: 16px; 
+    }
+}
