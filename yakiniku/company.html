@@ -9,18 +9,16 @@
         font-family: Arial, sans-serif;
         background-color: #ffffff; /* 全体背景を白に統一 */
         color: #000000; /* 文字は黒 */
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh; /* フッターを画面下部に配置 */
+        display: grid;
+        grid-template-rows: auto 1fr auto; /* ヘッダー、メインコンテンツ、フッター */
+        grid-template-columns: 1fr; /* 単一カラム */
+        min-height: 100vh;
     }
 
     .content-wrapper {
-        display: flex;
-        flex: 1; /* コンテンツがフッター以外の領域を占有 */
-    }
-
-    main {
-        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr; /* 単一カラムのレイアウト */
+        gap: 20px; /* セクション間にスペース */
     }
 
     header {
@@ -30,16 +28,23 @@
         background-size: cover;
         color: #ffffff; /* 白文字 */
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding: 0 20px; /* 左右に少し余白を追加 */
+    }
+
+    header img {
+        margin-right: 20px; /* 画像とテキストの間にスペースを追加 */
+        height: 100px; /* 画像の高さを調整 */
+        width: auto; /* 横幅を自動調整 */
     }
 
     header h1 {
         font-size: 2.5em;
         color: #FF0000; /* 赤文字 */
         text-shadow: 1px 1px 3px #000000; /* 黒い影 */
+        margin: 0; /* 見出しのデフォルトのマージンを削除 */
     }
 
     header p {
@@ -64,7 +69,7 @@
         color: #ffffff; /* 白文字 */
         text-decoration: none;
         font-weight: bold;
-        font-size: 1.5em;;
+        font-size: 1.5em; 
     }
 
     .section {
@@ -72,6 +77,8 @@
         box-sizing: border-box;
         max-width: 800px;
         margin: 0 auto;
+        background-color: #f4f4f4; /* セクション背景色 */
+        border-radius: 8px; /* 角を丸める */
     }
 
     h1 {
@@ -122,19 +129,6 @@
         color: #FF0000; /* 赤リンク */
         text-decoration: none;
     }
-
-    .ad-container {
-        width: 300px; /* 広告の幅 */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent; /* 背景を透明にして全体に合わせる */
-    }
-
-    .ad-container video {
-        width: 100%;
-        height: auto;
-    }
   </style>
 </head>
 
@@ -143,7 +137,8 @@
 <div class="content-wrapper">
   <main>
     <header>
-      <h1>牛工大</h1>
+        <img src="images/building_food_yakiniku.png" alt="">
+        <h1>牛工大</h1>
     </header>
 
     <nav>
@@ -187,13 +182,6 @@
       <p><strong>営業時間：</strong>毎日営業中</p>
     </div>
   </main>
-
-  <div class="ad-container">
-    <video autoplay muted loop>
-      <source src="images/onikuimages-1129131_h.mp4" type="video/mp4">
-      お使いのブラウザは動画タグに対応していません。
-    </video>
-  </div>
 </div>
 
 <footer>

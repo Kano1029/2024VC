@@ -24,44 +24,40 @@
         font-size: 1.5em;
         color: #FF0000;
         border-bottom: 2px solid #FF0000;
+        margin-bottom: 20px;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .menu-item {
+        text-align: center;
+        border: 1px solid #FF0000;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .menu-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-bottom: 2px solid #FF0000;
         margin-bottom: 10px;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    li {
-        padding: 20px 0;
-        border-bottom: 1px solid #FF0000;
-        display: flex;
-        align-items: center;
-    }
-
-    li:last-child {
-        border-bottom: none;
     }
 
     .menu-title {
         font-weight: bold;
         color: #FF0000;
         font-size: 1.2em;
-        margin-bottom: 5px;
+        margin: 10px 0;
     }
 
     .menu-description {
         font-size: 1em;
         color: #000000;
-        margin-bottom: 10px;
-    }
-
-    .menu-image {
-        width: 150px;
-        height: 100px;
-        object-fit: cover;
-        margin-right: 20px;
-        border: 2px solid #FF0000;
     }
 
     footer {
@@ -83,57 +79,43 @@
   
   <h2>豊富なメニュー</h2>
   
-  <ul>
-    <li>
+  <div class="menu-grid">
+    <div class="menu-item">
       <img src="images/koudai_karubi.jpg" alt="工大カルビ" class="menu-image">
-      <div>
-        <span class="menu-title">・工大カルビ</span>
-        <p class="menu-description">骨と骨の間の旨味の詰まった部位を丁寧にカット</p>
-      </div>
-    </li>
-    <li>
+      <span class="menu-title">工大カルビ</span>
+      <p class="menu-description">骨と骨の間の旨味の詰まった部位を丁寧にカット</p>
+    </div>
+    <div class="menu-item">
       <img src="images/karubi.jpg" alt="カルビ" class="menu-image">
-      <div>
-        <span class="menu-title">・カルビ</span>
-        <p class="menu-description">牛肉のうまみ、甘味と香りが楽しめます。最も人気のある定番メニューのひとつ。</p>
-      </div>
-    </li>
-    <li>
+      <span class="menu-title">カルビ</span>
+      <p class="menu-description">牛肉のうまみ、甘味と香りが楽しめます。最も人気のある定番メニューのひとつ。</p>
+    </div>
+    <div class="menu-item">
       <img src="images/harami.jpg" alt="ハラミ" class="menu-image">
-      <div>
-        <span class="menu-title">・ハラミ</span>
-        <p class="menu-description">国民のアイドル！お店一押し</p>
-      </div>
-    </li>
-    <li>
+      <span class="menu-title">ハラミ</span>
+      <p class="menu-description">国民のアイドル！お店一押し</p>
+    </div>
+    <div class="menu-item">
       <img src="images/buta_tan.jpg" alt="トンたん塩" class="menu-image">
-      <div>
-        <span class="menu-title">・トンたん塩</span>
-        <p class="menu-description">コリコリ食感を楽しむ。牛タンでなくても満足できます。</p>
-      </div>
-    </li>
-    <li>
+      <span class="menu-title">トンたん塩</span>
+      <p class="menu-description">コリコリ食感を楽しむ。牛タンでなくても満足できます。</p>
+    </div>
+    <div class="menu-item">
       <img src="images/buta_horumon.jpg" alt="やみつき豚ホルモン" class="menu-image">
-      <div>
-        <span class="menu-title">・やみつき豚ホルモン</span>
-        <p class="menu-description">この食感クセになる</p>
-      </div>
-    </li>
-    <li>
+      <span class="menu-title">やみつき豚ホルモン</span>
+      <p class="menu-description">この食感クセになる</p>
+    </div>
+    <div class="menu-item">
       <img src="images/tori_yagen.jpg" alt="ハラミ付きヤゲン" class="menu-image">
-      <div>
-        <span class="menu-title">・ハラミ付きヤゲン</span>
-        <p class="menu-description">ジューシーなハラミがついた、コリコリの軟骨</p>
-      </div>
-    </li>
-    <li>
+      <span class="menu-title">ハラミ付きヤゲン</span>
+      <p class="menu-description">ジューシーなハラミがついた、コリコリの軟骨</p>
+    </div>
+    <div class="menu-item">
       <img src="images/tori_momo.jpg" alt="とりもも" class="menu-image">
-      <div>
-        <span class="menu-title">・とりもも</span>
-        <p class="menu-description">お子様にも人気。やわらかくてジューシー</p>
-      </div>
-    </li>
-  </ul>
+      <span class="menu-title">とりもも</span>
+      <p class="menu-description">お子様にも人気。やわらかくてジューシー</p>
+    </div>
+  </div>
 
   <h2>注文・会計</h2>
   <p>タッチパネルで簡単オーダー：操作が簡単なタッチパネルで、スムーズに注文が可能です。</p>

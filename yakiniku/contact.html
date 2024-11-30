@@ -27,8 +27,18 @@
         margin-bottom: 10px;
     }
 
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* 左にラベル、右に内容 */
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
     .info-item {
-        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #FF0000;
+        border-radius: 5px;
+        background-color: #f9f9f9;
     }
 
     .info-title {
@@ -55,25 +65,23 @@
 
   <h2>店舗情報</h2>
 
-  <div class="info-item">
-    <span class="info-title">店名：</span>牛工大
-  </div>
-
-  <div class="info-item">
-    <span class="info-title">住所：</span>〒000-0000 焼肉市美食町1-2-3
-  </div>
-
-  <div class="info-item">
-    <span class="info-title">Googleマップはこちら：</span>  
-    <a href="https://www.google.com/maps" target="_blank">※適当な地図を掲載</a>
-  </div>
-
-  <div class="info-item">
-    <span class="info-title">電話番号：</span>000-456-7890
-  </div>
-
-  <div class="info-item">
-    <span class="info-title">メール：</span><a href="mailto:info@yakiniki.umai.up">info@yakiniki.umai.up</a>
+  <div class="contact-grid">
+    <div class="info-item">
+      <span class="info-title">店名：</span>牛工大
+    </div>
+    <div class="info-item">
+      <span class="info-title">住所：</span>〒000-0000 焼肉市美食町1-2-3
+    </div>
+    <div class="info-item">
+      <span class="info-title">Googleマップはこちら：</span>  
+      <a href="https://www.google.com/maps" target="_blank">※適当な地図を掲載</a>
+    </div>
+    <div class="info-item">
+      <span class="info-title">電話番号：</span>000-456-7890
+    </div>
+    <div class="info-item">
+      <span class="info-title">メール：</span><a href="mailto:info@yakiniki.umai.up">info@yakiniki.umai.up</a>
+    </div>
   </div>
 
   <h2>営業時間</h2>
