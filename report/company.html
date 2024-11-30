@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>牛工大 | 焼肉専門店</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff; /* 全体背景を白に統一 */
+        color: #000000; /* 文字は黒 */
+        display: grid;
+        grid-template-rows: auto 1fr auto; /* ヘッダー、メインコンテンツ、フッター */
+        grid-template-columns: 1fr; /* 単一カラム */
+        min-height: 100vh;
+    }
+
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr; /* 単一カラムのレイアウト */
+        gap: 20px; /* セクション間にスペース */
+    }
+
+    header {
+        height: 120px;
+        width: 100%;
+        background: url('building_food_yakiniku.jpg') no-repeat center center;
+        background-size: cover;
+        color: #ffffff; /* 白文字 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px; /* 左右に少し余白を追加 */
+    }
+
+    header img {
+        margin-right: 20px; /* 画像とテキストの間にスペースを追加 */
+        height: 100px; /* 画像の高さを調整 */
+        width: auto; /* 横幅を自動調整 */
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        color: #FF0000; /* 赤文字 */
+        text-shadow: 1px 1px 3px #000000; /* 黒い影 */
+        margin: 0; /* 見出しのデフォルトのマージンを削除 */
+    }
+
+    header p {
+        font-size: 1em;
+        color: #ffffff; /* 白文字 */
+    }
+
+    nav {
+        height: 30px;
+        background-color: #FF0000; /* 背景は赤 */
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        color: #ffffff; /* 白文字 */
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5em; 
+    }
+
+    .section {
+        padding: 20px;
+        box-sizing: border-box;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #f4f4f4; /* セクション背景色 */
+        border-radius: 8px; /* 角を丸める */
+    }
+
+    h1 {
+        font-size: 2em;
+        color: #FF0000;
+        border-bottom: 2px solid #FF0000;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: #FF0000;
+        border-bottom: 1px solid #FF0000;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.8;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    ul li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #FF0000;
+    }
+
+    footer {
+        height: 70px;
+        background-color: #000000; /* 背景は黒 */
+        color: #ffffff; /* 文字は白 */
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    footer a {
+        color: #FF0000; /* 赤リンク */
+        text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="content-wrapper">
+  <main>
+    <header>
+        <img src="images/building_food_yakiniku.png" alt="">
+        <h1>牛工大</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="about.html">サービスの特徴</a></li>
+        <li><a href="contact.HTML">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <div id="about" class="section">
+      <h1>概要</h1>
+      <p>牛工大へようこそ！<br>
+      一流の肉を格安で提供する焼肉専門店「牛工大」です。<br>
+      私たちのモットーは、「中途半端なものは提供しません」。</p>
+      <p>焼肉好きの方に、品質と価格の両方で満足していただけるよう、こだわりのメニューをご用意しております。</p>
+    </div>
+
+    <div id="features" class="section">
+      <h1>当店のこだわり</h1>
+      <ul>
+        <li><strong>本格炭火焼肉：</strong> しちりんを使った炭火焼肉で、素材本来の旨味を引き出します。</li>
+        <li><strong>快適な環境：</strong> 最新鋭の換気システムを導入しており、煙や匂いを気にせず快適にお食事いただけます。</li>
+      </ul>
+    </div>
+
+    <div id="company" class="section">
+      <h1>会社情報</h1>
+      <section>
+        <h2>社長の挨拶</h2>
+        <p>「オンリーワンを目指します。」</p>
+      </section>
+    </div>
+
+    <div id="contact" class="section">
+      <h1>お問い合わせ</h1>
+      <p><strong>店舗情報：</strong>牛工大</p>
+      <p><strong>住所：</strong>〒000-0000 焼肉市美食町1-2-3</p>
+      <p><strong>電話番号：</strong>000-456-7890</p>
+      <p><strong>メール：</strong><a href="mailto:info@yakiniku.umai.up">info@yakiniku.umai.up</a></p>
+      <p><strong>営業時間：</strong>毎日営業中</p>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <p><small>© 2022 Nlab | お問い合わせ：<a href="mailto:info@net.it-chiba.ac.jp">info@net.it-chiba.ac.jp</a></small></p>
+</footer>
+
+</body>
+</html>
